@@ -1,0 +1,54 @@
+<div class="col sidebar">
+    <h4>Filter Cars</h4>
+    <form id="car-filter">
+        <!--<div class="row input-field col s12">-->
+            <!--<div class="col s6">-->
+
+                <!--<input id="price_min" type="number" class="validate">-->
+                <!--<label for="price_min">Min Price:</label>-->
+            <!--</div>-->
+            <!--<div class="col s6">-->
+
+                <!--<input id="price_max" type="number" class="validate">-->
+                <!--<label for="price_max">Max Price:</label>-->
+            <!--</div>-->
+        <!--</div>-->
+        <br>
+        <div class="input-field col s12">
+
+                <select id="year-select">
+                    <option value="" selected>Choose your option</option>
+                    {{#if years}}
+                        {{#each years}}
+                            <option value="{{this}}">{{this}}</option>
+                        {{/each}}
+                    {{/if}}
+                </select>
+            <label for="year-select">Year: </label>
+        </div>
+        <br>
+        <div class="input-field col s12">
+
+                <select id="fuel-select">
+                    <option value="">Choose your option</option>
+                    {{#if fuelType}}
+                        {{#each fuelType}}
+                            <option value="{{this}}">{{this}}</option>
+                        {{/each}}
+                    {{/if}}
+                </select>
+            <label for="fuel-select">Fuel Type:</label>
+        </div>
+        <br>
+        <div class="input-field col s12">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+
+    </form>
+</div>
+<div class="col main">
+    <div class="row" id="car-grid">
+    </div>
+</div>

@@ -1,0 +1,161 @@
+html {
+    height: 100%;
+    width: 100%
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+    color: #00B7FF;
+}
+
+/* Home Screen */
+
+.masthead {
+    text-align: center;
+    color: white;
+    background: linear-gradient(
+            rgba(220, 220, 220, 0.45),
+            rgba(220, 220, 220, 0.25),
+            rgba(220, 220, 220, 0.25),
+            rgba(220, 220, 220, 0.45)),
+            url("../images/header.jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.masthead .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.masthead .intro-text .intro-lead-in {
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+    margin-bottom: 25px;
+    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.masthead .intro-text .intro-heading {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media (min-width: 768px) {
+    .masthead .intro-text {
+        padding-top: 300px;
+        padding-bottom: 200px;
+    }
+
+    .masthead .intro-text .intro-lead-in {
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+        margin-bottom: 25px;
+        font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    .masthead .intro-text .intro-heading {
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+        margin-bottom: 50px;
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+}
+
+/* Nav layout */
+body > div.navbar-fixed > nav > div > a {
+    margin-left: 20px;
+}
+
+
+/* Menu */
+.container {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body > div > div > div.carousel-item.active {
+    height: 500px;
+    width: 250px;
+    margin-top: 20%;
+
+}
+
+body > div > div > div.carousel-item {
+    height: 500px;
+    width: 250px;
+    margin-top: 20%;
+
+}
+
+body > div > div .carousel {
+    width: 100%;
+    margin-top: 20%;
+    overflow: visible;
+    margin-bottom: 10px;
+}
+
+/* Used */
+
+.sidebar {
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    float: left;
+    background-color: #F5F5F5;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    margin-top: 64px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#car-filter  {
+    width: 100%;
+}
+
+#car-filter > div:nth-child {
+    width: 100%;
+}
+
+.main {
+    margin-left: 25%;
+    margin-top: 30px
+}
+
+#car-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+#car-grid div.card-content {
+    height: 150px;
+}
+
+/* Car Page */
+
+.mainContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
