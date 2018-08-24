@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mLab = 'mongodb://carkiosk:carkiosk1@ds119802.mlab.com:19802/car-kiosk';
+const mLab = process.env.MONGO_URI;
 
 mongoose.connect(mLab);
 const db = mongoose.connection;

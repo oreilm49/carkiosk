@@ -25,7 +25,7 @@ $('document').ready(function () {
         }
     };
     $.get({
-        url: 'http://localhost:3000/api/cars'
+        url: 'https://carkiosk-demo.appspot.com/api/cars'
     })
         .done(function (data) {
             // data = JSON.parse(data);
@@ -43,7 +43,7 @@ $('document').ready(function () {
             };
             console.log(filter);
             $.post(
-                "http://localhost:3000/api/cars/filter",
+                "https://carkiosk-demo.appspot.com/api/cars/filter",
                 filter,
                 function(data) {
                     carListBuilder($('#car-grid'),data)
